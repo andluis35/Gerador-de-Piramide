@@ -1,0 +1,116 @@
+body {
+    background: linear-gradient(90deg,#0B2447, #19376D);
+    font-family: "Sofia Sans Condensed", sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4B70F5;
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+h3 {
+    font-weight: 500;
+    color: #3751b1;
+}
+
+p {
+    font-family: sans-serif;
+    display: block;
+    white-space: pre;
+    font-size: 24px;
+}
+
+.frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    box-shadow: 0 0 50px black;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    height: 100%;
+}
+
+.left-side {
+    background-color: #FFFFFF;
+    border-radius: 25px 0 0 25px;
+    text-align: center;
+}
+
+.right-side {
+    background-color: #576CBC;
+    border-radius: 0 25px 25px 0;
+    color: #FFFFFF;
+    overflow: auto;
+}
+
+.social-medias-images {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100vh;
+    background-color: #30258a;
+    border-top: 4px solid #576CBC;
+}
+
+.footer p {
+    font-size: 16px;
+    display: flex;
+    margin: 0;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+
+.footer a {
+    color: #A5D7E8;
+}
+
+.footer a:hover {
+    color: #7488d8;
+    text-shadow: 0 0 1px black;
+}
+
+.footer a:active {
+    color: #19376D;
+}
+
+#btn-generate-normal, #btn-generate-reverse {
+    cursor: pointer;
+    width: 128px;
+    height: 32px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #4B70F5;
+    color: #FFFFFF;
+}
+
+#btn-generate-normal:hover, #btn-generate-reverse:hover {
+    background-color: #4C3BCF;
+}
+
+#btn-generate-normal:active, #btn-generate-reverse:active {
+    background-color: #30258a;
+}
